@@ -1,4 +1,4 @@
-//This script is called by phantomjs.exe
+//This script is called by phantomjs.exe 
 //Phantomjs is a headless web browser, meaning it will open web pages, but they are not seen
 //This script works in conjunction with phantomjs to snap .jpg images of the signed html eform
 //Variables that are passed to this program are as follows:
