@@ -1,4 +1,4 @@
-//This script is called by phantomjs.exe 
+//This script is called by phantomjs.exe
 //Phantomjs is a headless web browser, meaning it will open web pages, but they are not seen
 //This script works in conjunction with phantomjs to snap .jpg images of the signed html eform
 //Variables that are passed to this program are as follows:
@@ -45,4 +45,11 @@ page.open(address, function (status) {
 	}
 });
 
-
+/*
+Math.max(document.documentElement["clientWidth"], document.body["scrollWidth"], document.documentElement["scrollWidth"], document.body["offsetWidth"], document.documentElement["offsetWidth"]);
+Math.max(document.documentElement["clientHeight"], document.body["scrollHeight"], document.documentElement["scrollHeight"], document.body["offsetHeight"], document.documentElement["offsetHeight"]);
+Did not reveal the actual page height. Page height may be affected by viewportsize
+In order to determine the split ranges in this particular case, I set my viewportsize and created a full output of the page.
+Then, I determine the pixel range of pages and amount of padding.
+This does not currently split the total pixel height of the rendered page into single pages dynamically because I could not reliably get the rendered pixel height without rendering the image first.
+*/
